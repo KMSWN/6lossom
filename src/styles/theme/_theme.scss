@@ -37,7 +37,7 @@ $message-input: #f175a9;
 
 // 벚꽃에 사용
 @mixin pink-shadow {
-  box-shadow: rem(2px) rem(3px) rem(4px) rgba(102, 62, 79, 0.35);
+  filter: drop-shadow(rem(2px) rem(3px) rem(4px) rgba(102, 62, 79, 0.35));
 }
 
 // pink button 사용
@@ -54,8 +54,8 @@ $message-input: #f175a9;
 
 @mixin modal-background {
   background-color: rgba(0, 0, 0, 0.2);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 /* button long/short */
@@ -74,7 +74,7 @@ $message-input: #f175a9;
   background-color: $cherryblossom100;
   color: $secondary;
   border-radius: rem(20px);
-} 
+}
 
 @mixin message-input {
   background-color: $white;
