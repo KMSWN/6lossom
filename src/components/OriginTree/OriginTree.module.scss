@@ -8,12 +8,15 @@
   align-items: center;
   width: 100%;
   height: inherit;
+  z-index: 0;
+  transform: scale(0.5);
+  margin-top: rem(20px);
 
   .blossomTreeImage {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%) scale(2.5);
 
     width: 80%;
   }

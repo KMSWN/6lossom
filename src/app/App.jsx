@@ -5,10 +5,11 @@ import SignUpPage from '@/pages/SignUp/SignUpPage';
 import SignInPage from '@/pages/SignIn/SignInPage';
 import ShareTreePage from '@/pages/ShareTreePage/ShareTreePage';
 import MessageCustomPage from '@/pages/MessageCustomPage/MessageCustomPage';
+import styles from '@/app/App.module.scss';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className= 'App'>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />

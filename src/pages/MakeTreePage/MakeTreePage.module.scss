@@ -1,6 +1,9 @@
 @import '@/styles/utils/function';
 @import '@/styles/theme/theme';
 
+* {
+}
+
 .makeTreeContainer {
   margin: 0 auto;
   min-width: rem(350px);
@@ -36,11 +39,11 @@
       height: 100%;
       padding: 5px;
       padding-bottom: 0;
-      z-index: 5;
     }
 
     .userNickname::placeholder {
       color: $gray300;
+      font-size: medium;
     }
 
     span {
@@ -49,6 +52,9 @@
   }
 
   .makeTreeCustom {
+    max-width: rem(768px);
+    min-height: rem(272px);
+
     box-sizing: border-box;
 
     height: 25%;
@@ -81,6 +87,16 @@
   .BackgroundCustomList {
     display: flex;
     justify-content: center;
-    gap: rem(20px);
+    // gap: rem(20px);
+    width: rem(400px);
   }
+}
+
+.shortButtonItem {
+  width: rem(349px);
+}
+
+.originTree {
+  max-width: rem(270px);
+  max-height: rem(370px);
 }

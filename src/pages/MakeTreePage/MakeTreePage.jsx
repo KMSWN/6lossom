@@ -9,7 +9,7 @@ import ShortButtonList from '@/components/ShortButtonList/ShortButtonList';
 import OriginTree from '@/components/OriginTree/OriginTree';
 
 import classNames from 'classnames';
-import style from './MakeTreePage.module.scss';
+import style from '@/pages/MakeTreePage/MakeTreePage.module.scss';
 import headerStyle from '@/components/Header/Header.module.scss';
 import selectPink from '@/assets/custom/select-bg-pink.png';
 import selectNight from '@/assets/custom/select-bg-night.png';
@@ -135,12 +135,14 @@ const MakeTreePage = () => {
             subText={'벚꽃나무의 하늘을 선택해주세요.'}
           />
           <BackgroundCustomList />
-          <ShortButtonList
-            firstText={'취소'}
-            firstClick={() => navigate('/')}
-            secondText={'완료'}
-            type={'submit'}
-          />
+          <div className = {style.shortButtonItem}>
+            <ShortButtonList
+              firstText={'취소'}
+              firstClick={() => navigate('/')}
+              secondText={'완료'}
+              type={'submit'}
+            />
+          </div>
         </div>
       </form>
     </BgContext.Provider>
