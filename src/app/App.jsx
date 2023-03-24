@@ -6,6 +6,7 @@ import SignUpPage from '@/pages/SignUp/SignUpPage';
 import SignInPage from '@/pages/SignIn/SignInPage';
 import ShareTreePage from '@/pages/ShareTreePage/ShareTreePage';
 import MessageCustomPage from '@/pages/MessageCustomPage/MessageCustomPage';
+import WriteMessagePage from '@/pages/WriteMessagePage/WriteMessagePage';
 
 function App() {
   return (
